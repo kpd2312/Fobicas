@@ -3,58 +3,81 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hỗ trợ học tập</title>
+    <title>Tài liệu học tập</title>
     <link href="https://fonts.googleapis.com/css2?family=Fobicas&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: 'Fobicas', sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+
+        header {
+            background-color: #4CAF50; /* Màu xanh lá cây */
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: white;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+
+        h1 {
+            margin-bottom: 20px;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        li {
+            background-color: #4CAF50; /* Màu xanh lá cây */
+            color: white;
+            padding: 15px;
+            margin: 10px 0;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        li:hover {
+            background-color: #45a049; /* Màu xanh lá cây đậm hơn khi di chuột */
+        }
+
+        a {
+            color: white;
+            text-decoration: none;
+            display: block;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
 </head>
 <body>
-    <!-- Header -->
-    <header>
-        <div class="container">
-            <h1>Hỗ trợ học tập</h1>
-            <nav>
-                <ul>
-                    <li><a href="#">Trang chủ</a></li>
-                    <li><a href="#">BF1</a></li>
-                    <li><a href="#">BF2</a></li>
-                    <li><a href="#">BF1-E</a></li>
-                    <li><a href="#">BF2-E</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
 
-    <!-- Hero section -->
-    <section class="hero">
-        <div class="container">
-            <h2>Chào mừng đến với trang hỗ trợ học tập</h2>
-            <p>Chọn nhóm ngành học để xem tài liệu phù hợp</p>
-        </div>
-    </section>
+<header>
+    <h1>Tài liệu học tập</h1>
+</header>
 
-    <!-- Section for study materials -->
-    <section class="study-groups">
-        <div class="container">
-            <div class="group">
-                <a href="#">BF1</a>
-            </div>
-            <div class="group">
-                <a href="#">BF2</a>
-            </div>
-            <div class="group">
-                <a href="#">BF1-E</a>
-            </div>
-            <div class="group">
-                <a href="#">BF2-E</a>
-            </div>
-        </div>
-    </section>
+<div class="container">
+    <ul>
+        <li><a href="#">Chuyên ngành</a></li>
+        <li><a href="#">Cơ sở và cốt lõi ngành</a></li>
+        <li><a href="#">Khối kiến thức toán và khoa học cơ bản</a></li>
+        <li><a href="#">Kiến thức bổ trợ</a></li>
+        <li><a href="#">Lý luận Chính trị - Pháp luật Đại cương - Giáo dục Quốc Phòng An Ninh</a></li>
+    </ul>
+</div>
 
-    <!-- Footer -->
-    <footer>
-        <div class="container">
-            <p>© 2024 Hỗ trợ học tập - Liên hệ: email@example.com</p>
-        </div>
-    </footer>
 </body>
 </html>
