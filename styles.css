@@ -1,90 +1,77 @@
-/* Global styles */
+/* Tổng thể */
 body {
-    font-family: 'Fobicas', sans-serif;
+    font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #e0f7e0; /* Màu xanh lá nhạt */
-    color: #333;
+    background-color: #e0f7e0; /* Màu nền xanh lá nhạt */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-/* Header styles */
-header {
-    background-color: #2e7d32; /* Màu xanh lá đậm */
-    color: white;
-    padding: 20px 0;
-    text-align: center;
+/* Logo */
+header .logo {
+    font-size: 3rem;
+    color: black;
+    margin: 50px 0;
+    display: flex;
+    align-items: center;
 }
 
-header h1 {
-    margin: 0;
-    font-size: 2.5em;
-}
-
-nav ul {
-    list-style: none;
-    padding: 0;
-}
-
-nav ul li {
-    display: inline;
-    margin-right: 20px;
-}
-
-nav ul li a {
-    color: white;
-    text-decoration: none;
-    font-size: 1.2em;
-}
-
-/* Hero section */
-.hero {
-    text-align: center;
-    padding: 50px 0;
-    background-color: #81c784; /* Màu xanh lá vừa */
-}
-
-.hero h2 {
-    font-size: 2.5em;
-    margin-bottom: 10px;
-}
-
-.hero p {
-    font-size: 1.2em;
-}
-
-/* Study groups */
-.study-groups {
-    text-align: center;
-    padding: 40px 0;
-}
-
-.study-groups .group {
+header .logo .red-square {
     display: inline-block;
-    margin: 10px;
-    background-color: #4caf50; /* Màu xanh lá đậm */
-    padding: 20px;
-    border-radius: 8px;
-    width: 150px;
-}
-
-.study-groups .group a {
-    text-decoration: none;
-    color: white;
-    font-size: 1.5em;
-}
-
-.study-groups .group:hover {
-    background-color: #388e3c; /* Hiệu ứng khi hover */
-}
-
-/* Footer */
-footer {
-    background-color: #2e7d32;
-    color: white;
-    padding: 20px 0;
+    width: 40px;
+    height: 40px;
+    background-color: red;
     text-align: center;
+    line-height: 40px;
+    color: white;
+    font-weight: bold;
 }
 
-footer p {
-    margin: 0;
+/* Thanh tìm kiếm */
+.search-bar {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.search-bar input {
+    width: 300px;
+    padding: 10px;
+    border: 2px solid #ccc;
+    border-radius: 5px 0 0 5px;
+}
+
+.search-bar button {
+    padding: 10px;
+    border: none;
+    background-color: #28a745;
+    color: white;
+    cursor: pointer;
+    border-radius: 0 5px 5px 0;
+}
+
+.search-bar button:hover {
+    background-color: #218838;
+}
+
+/* Menu chính */
+.menu {
+    display: flex;
+    gap: 20px;
+}
+
+.menu-item {
+    background-color: #4caf50; /* Màu xanh lá đậm */
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    font-size: 1.2rem;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+.menu-item:hover {
+    transform: scale(1.1); /* Phóng to khi hover */
 }
